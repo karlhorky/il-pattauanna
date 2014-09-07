@@ -1,0 +1,89 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+  <title>Pattauanna Il by Karl Horky</title>
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
+  <script language="javascript">
+  <!--
+  function menuClick (menuNum) {
+  for (currNum=1;currNum<=7;currNum++)  {
+    if (document['menu' + currNum].getAttribute('src')=='yellow7.jpg') 
+      document['menu' + currNum].src='purple7.jpg';
+  } //
+  document['menu' + menuNum].src='yellow7.jpg';
+  document['viewimg'].src='0' + menuNum + 'view.jpg';
+  } //menuClick
+  
+  function toggleSize() {
+  var currfile = document['viewimg'].getAttribute('src');
+  var currsize = currfile.substring(2,6);
+  var menuNum = currfile.substring(1,2);
+  
+  if (currsize == 'full')
+    var newsize = 'view';
+  else if (currsize == 'view')
+    var newsize = 'full';
+    
+  document['viewimg'].src='0' + menuNum + newsize + '.jpg';
+  }
+  //-->
+  </script>
+  <style type="text/css">
+  <!--
+  body, html
+  {
+    margin-top: 0px;
+    padding-top: 0px;
+    font : bold 10pt helvetica, arial, sans-serif;
+  }
+  a
+  {
+    color : #28c63e;
+    font-weight : bold;
+    text-decoration : none;
+  }
+
+  img
+  {
+    border : none;
+    padding : 0px;
+    margin : 0px;
+  }
+  //-->
+  </style>
+</head>
+
+
+<body>
+<table style="margin: 23px 0px 0px 12px;">
+  <tr>
+    <td colspan="2"><img src="banner.jpg" /></td>
+  </tr>
+  <tr >
+    <td style="padding-top:20px;white-space:nowrap" valign="top">
+      <a href="#" onclick="menuClick('1')"><img name="menu1" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('2')"><img name="menu2" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('3')"><img name="menu3" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('4')"><img name="menu4" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('5')"><img name="menu5" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('6')"><img name="menu6" src="purple7.jpg" /></a>
+      <a href="#" onclick="menuClick('7')"><img name="menu7" src="purple7.jpg" /></a>
+    </td>
+    <td style="padding:20px 0px 0px 30px" align="left">
+      <a onclick="toggleSize()" href="#">
+      <img name="viewimg" src="blank.jpg" style="padding-bottom:2px" />
+      <br />Click images to toggle size.
+      </a>
+    </td>
+  </tr>
+</table>
+<br /><br />
+
+
+</body>
+
+</html>
